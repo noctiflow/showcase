@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'
+
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -28,14 +30,42 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
+# misc
+gem 'bootstrap-sass'
+ gem 'font-awesome-rails'
+gem 'simple_form'
+gem 'bootstrap-glyphicons'
+gem 'acts_as_paranoid'
+ gem 'mail_form'
+gem 'rails-i18n'
+gem 'meta-tags' #SEO
+
+#optional gems
+#gem 'kaminari' # easy pagination
+#gem 'elasticsearch', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git' # queries
+#gem 'cancancan', '~> 1.10'
+#gem 'carrierwave', '~> 1.0'
+#gem 'devise'
+#gem 'foreman' # for mail
+#gem 'stripe' # payments
+#gem 'activemerchant' # shopify
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+
+  #optional dev gems
+  #gem 'faker'
+  #gem 'mailcatcher' # for mail testing
+  #gem 'factory_girl_rails'
+  #gem 'rails-controller-testing'
+  #gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
@@ -45,6 +75,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'interactive_editor'
+  gem 'awesome_print'
+  gem 'hirb'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
