@@ -12,3 +12,10 @@ rails db:create db:migrate
 rails s
 
 ```
+
+### Deployment:
+
+```bash
+heroku create
+git push heroku master
+```
