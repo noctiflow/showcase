@@ -9,4 +9,6 @@ git init
 cd projectname
 bundle install
 rails db:create db:migrate
+rails s
+
 ```
