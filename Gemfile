@@ -41,7 +41,6 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'bootstrap-glyphicons'
-gem 'acts_as_paranoid'
 gem 'mail_form'
 gem 'rails-i18n'
 gem 'meta-tags' #SEO
@@ -66,6 +65,7 @@ group :development, :test do
   #gem 'factory_girl_rails'
   #gem 'rails-controller-testing'
   #gem 'rspec-rails', '~> 3.5'
+  #gem 'acts_as_paranoid'
 end
 
 group :development do
