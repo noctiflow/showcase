@@ -38,11 +38,11 @@ gem 'bcrypt', '~> 3.1.7'
 
 # misc
 gem 'bootstrap-sass'
- gem 'font-awesome-rails'
+gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'bootstrap-glyphicons'
 gem 'acts_as_paranoid'
- gem 'mail_form'
+gem 'mail_form'
 gem 'rails-i18n'
 gem 'meta-tags' #SEO
 
