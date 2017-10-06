@@ -11,9 +11,14 @@
  * It is generally better to create a new file per style scope.
 */
 
+/*
+*= require material_icons
+*/
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap/glyphicons";
+@import "materialize";
 @import "font-awesome";
 @import "mediaquery-mixins";
 @import "global";

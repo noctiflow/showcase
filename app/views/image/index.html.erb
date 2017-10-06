@@ -1,0 +1,87 @@
+<div class="container-fluid">
+  <br>
+
+  <div style="border: 2px solid black; border-radius: 5px;" class="col-md-12">
+
+    <div class="wrapper">
+      <div style="text-align: center; overflow: scroll; height: 100%; zoom: 60%;" class="col-md-4">
+      <h1>Image Editor</h1>
+
+      <!--Form for collecting image URL -->
+      <form id="urlBox" class = "center">
+        <input style="width: 300px;" class="url-box" type="url" id="imgUrl" placeholder="Paste any image link and hit enter to start playing.">
+      </form>
+
+      <!--Controls for CSS filters via range input-->
+      <div class="sliders">
+        <form id="imageEditor">
+          <p>
+            <label for="gs">Grayscale</label>
+            <span class="valuenum" id="value1"></span>
+            <input id="gs" name="gs" type="range" min=0 max=100 value=0>
+          </p>
+
+          <p>
+            <label for="blur">Blur</label>
+            <span class="valuenum" id="value2"></span>
+            <input id="blur" name="blur" type="range" min=0 max=10 value=0>
+          </p>
+
+          <p>
+            <label for="br">Brightness</label>
+            <span class="valuenum" id="value3"></span>
+            <input id="br" name="br" type="range" min=0 max=200 value=100>
+          </p>
+
+          <p>
+            <label for="ct">Contrast</label>
+            <span class="valuenum" id="value4"></span>
+            <input id="ct" name="ct" type="range" min=0 max=200 value=100>
+          </p>
+
+          <p>
+            <label for="huer">Hue Rotate</label>
+            <span class="valuenum" id="value5"></span>
+            <input id="huer" name="huer" type="range" min=0 max=360 value=0>
+          </p>
+
+          <p>
+            <label for="opacity">Opacity</label>
+            <span class="valuenum" id="value6"></span>
+            <input id="opacity" name="opacity" type="range" min=0 max=100 value=100>
+          </p>
+
+          <p>
+            <label for="invert">Invert</label>
+            <span class="valuenum" id="value7"></span>
+            <input id="invert" name="invert" type="range" min=0 max=100 value=0>
+          </p>
+
+          <p>
+            <label for="saturate">Saturate</label>
+            <span class="valuenum" id="value8"></span>
+            <input id="saturate" name="saturate" type="range" min=0 max=500 value=100>
+          </p>
+
+          <p>
+            <label for="sepia">Sepia</label>
+            <span class="valuenum" id="value9"></span>
+            <input id="sepia" name="sepia" type="range" min=0 max=100 value=0>
+          </p>
+
+          <input type="reset" form="imageEditor" id="reset" value="Reset" />
+
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <!--container where image will be loaded-->
+      <div id="imageContainer" class="center">
+        <img style="position: absolute; top: 10vh; left: 5px;" class="img-responsive" src="<%= asset_path('puppies.jpg') %>"/>
+      </div>
+    </div>
+
+    </div>
+</div>
+</div>

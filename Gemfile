@@ -38,6 +38,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # misc
 gem 'bootstrap-sass'
+gem 'materialize-sass'
+gem 'material_icons'
 gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'bootstrap-glyphicons'
