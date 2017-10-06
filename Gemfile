@@ -52,7 +52,7 @@ gem 'meta-tags' #SEO
 #gem 'elasticsearch', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git' # queries
 #gem 'cancancan', '~> 1.10'
 #gem 'carrierwave', '~> 1.0'
-#gem 'devise'
+gem 'devise'
 #gem 'foreman' # for mail
 #gem 'stripe' # payments
 #gem 'activemerchant' # shopify
