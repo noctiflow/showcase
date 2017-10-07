@@ -60,26 +60,34 @@
        </div>
        <% end %>
 
-       <p class="navbar-text pull-right">
-        <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <!-- <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> | -->
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-        <% else %>
-          <!-- <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> | -->
-          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-        <% end %>
-       </p>
-
+       <nav class="navbar-inverse pull-right">
+         <div class="container-fluid">
+            <% if user_signed_in? %>
+              Logged in as <strong><%= current_user.email %></strong>.
+              <!-- <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> | -->
+              <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link pull-right'  %>
+            <% else %>
+              <!-- <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> | -->
+              <!-- <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> -->
+            <% end %>
+        </div>
+      </nav>
+      <br>
   </head>
 
   <body>
 
     <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
+      <br>
+      <div class="alert alert-info alert-dismissible" id="warn-alert"><%= notice %>
+        <button type="button" class="close" data-dismiss="alert">x</button>
+      </div>
       <% end %>
       <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
+      <br>
+      <div class="alert alert-warning alert-dismissible" id="warn-alert"><%= alert %>
+        <button type="button" class="close" data-dismiss="alert">x</button>
+      </div>
     <% end %>
     <br>
     <div class="container-fluid">
